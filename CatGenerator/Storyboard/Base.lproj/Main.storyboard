@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cat View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CatViewController" customModule="CatGenerator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cbi-wb-Mmy" customClass="CustomImageView" customModule="CatGenerator" customModuleProvider="target">
+                                <rect key="frame" x="39.333333333333343" y="255.66666666666666" width="314.33333333333326" height="340.66666666666674"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3v-fp-U4D">
+                                <rect key="frame" x="20" y="616.33333333333337" width="353" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t3v-fp-U4D" secondAttribute="trailing" constant="20" id="4x3-HJ-cSh"/>
+                            <constraint firstItem="t3v-fp-U4D" firstAttribute="top" secondItem="cbi-wb-Mmy" secondAttribute="bottom" constant="20" id="5F4-P9-Gqs"/>
+                            <constraint firstItem="cbi-wb-Mmy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IuO-h5-Bcq"/>
+                            <constraint firstItem="t3v-fp-U4D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PKu-cO-vuM"/>
+                            <constraint firstItem="cbi-wb-Mmy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="UAF-di-Hij"/>
+                            <constraint firstItem="cbi-wb-Mmy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="ZNi-53-xZx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="t3v-fp-U4D" secondAttribute="bottom" constant="20" id="j96-ht-jcG"/>
+                            <constraint firstItem="cbi-wb-Mmy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="w6e-0Y-RX1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="catFactLabel" destination="t3v-fp-U4D" id="sL7-q9-efS"/>
+                        <outlet property="catImageView" destination="cbi-wb-Mmy" id="YZB-Fq-sgI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
