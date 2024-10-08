@@ -191,7 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				9E9DCCE02CB5711900FBC687 /* Model */,
-				9E9DCCE12CB5712400FBC687 /* View */,
+				9E9DCCF62CB5BC2600FBC687 /* View */,
 				9E9DCCE22CB5712D00FBC687 /* ViewModel */,
 			);
 			path = Screens;
@@ -204,14 +204,6 @@
 				9E9DCCE52CB5721A00FBC687 /* CatFact.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		9E9DCCE12CB5712400FBC687 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9E9DCCE92CB5728700FBC687 /* CatViewController.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		9E9DCCE22CB5712D00FBC687 /* ViewModel */ = {
@@ -229,6 +221,14 @@
 				9E9DCCF42CB5B09F00FBC687 /* UIViewController.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		9E9DCCF62CB5BC2600FBC687 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9E9DCCE92CB5728700FBC687 /* CatViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
